@@ -19,12 +19,12 @@ router.get('/:id', (req, res) => {
 
 router.put('/:id', (req, res) => {
   console.log(req.body);
-  res.send(`PUT ID: ${req.params.title}`);
+  res.send(`PUT ID: ${req.params.id}`);
 });
 
 router.delete('/:id', (req, res) => {
   console.log(req.body);
-  res.send(`DELETE ID: ${req.params.title}`);
+  res.send(`DELETE ID: ${req.params.id}`);
 });
 
 module.exports = router;
