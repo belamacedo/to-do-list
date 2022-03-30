@@ -5,9 +5,9 @@ const taskSchema = mongoose.Schema({
   done: { type: Boolean, default: false },
   checklist: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Task',
+    ref: 'Checklist',
     required: true,
   },
 });
 
-module.exports = mongoose.model('Checklist', taskSchema);
+module.exports = mongoose.model('Task', taskSchema);
